@@ -144,7 +144,7 @@ class UsersController extends AppController {
 
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow(array('recover', 'reset', 'admin_edit'));
+		$this->Auth->allow(array('recover', 'reset'));
 	}
 
 /**
